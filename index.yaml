@@ -1,0 +1,11 @@
+apiVersion: v1
+entries:
+  mi-app-albert:
+    - apiVersion: v2
+      name: mi-app-albert
+      version: 1.0.1
+      description: Un chart para la aplicación Nginx con ConfigMap
+      urls:
+        - "https://btovc.github.io/helm-app-albert/mi-app-albert-1.0.1.tgz"  # Asegúrate de que esta URL sea correcta
+      created: "2024-11-22T00:00:00Z"  # Puedes actualizar esta fecha a la actual si prefieres
+
