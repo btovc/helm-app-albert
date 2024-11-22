@@ -1,11 +1,11 @@
-Instalación de la app en Helm
+- Instalación de la app en Helm
 
 Añadir el repositorio a Helm
 Primero, necesitas agregar el repositorio de tu aplicación a Helm. Para hacerlo, ejecuta el siguiente comando en tu terminal:
 
 helm repo add mi-app-albert https://btovc.github.io/helm-app-albert/
 
-Instalar la aplicación
+- Instalar la aplicación
 Una vez que el repositorio esté añadido, puedes proceder a instalar la aplicación.
 En el siguiente comando, sustituye [Nombre que tu quieras] por el nombre que desees para tu instalación,
 pero sin incluir los corchetes.
