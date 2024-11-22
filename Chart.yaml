@@ -1,6 +1,0 @@
-apiVersion: v2
-name: mi-app-albert
-description: Un chart para la aplicación Nginx con ConfigMap
-type: application
-version: 1.0.1
-appVersion: "1.0.1"
