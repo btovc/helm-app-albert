@@ -1,0 +1,8 @@
+
+
+
+Epa!! Enhorabuena! Has conseguido instalar mi app! 
+
+Es un proyecto para kubernetes de Alberto para ASIR.
+
+

@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mi-nginx-albert-service  # Nombre del servicio
+  labels:
+    app.kubernetes.io/name: {{ include "mi-app-albert.name" . }}  # Coincide con las etiquetas del deployment
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: Helm  # Etiqueta necesaria para Helm
+spec:
+  selector:
+    app.kubernetes.io/name: {{ include "mi-app-albert.name" . }}  # Selector actualizado para coincidir con los pods
+    app.kubernetes.io/instance: {{ .Release.Name }}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30082  # Este es el puerto accesible desde fuera del clúster
+  type: NodePort
+

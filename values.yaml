@@ -1,0 +1,23 @@
+# mi-app-albert - Helm Chart
+#
+# Bienvenido al chart de Helm para la aplicación mi-app-albert.
+# Esta es una aplicación sencilla de Nginx.
+#
+# Puedes personalizar el número de réplicas antes de instalarla.
+# El valor predeterminado de réplicas es 1. Para cambiarlo, usa el siguiente comando:
+#
+# helm install mi-app-albert ./mi-app-albert-1.0.1.tgz --set replicas=<número_de_replicas>
+#
+# Ejemplo: Para 3 réplicas:
+# helm install mi-app-albert ./mi-app-albert-1.0.1.tgz --set replicas=3
+#
+replicas: 1  # Valor predeterminado de las réplicas
+
+image:
+  repository: nginx
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80

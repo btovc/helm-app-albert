@@ -1,0 +1,108 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "mi-app-albert.fullname" . }}-configmap
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto de Fin de Curso - ASIR - Desplegado con Helm</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background: #007BFF;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+            h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+            h2 {
+                color: #333;
+            }
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .content {
+                margin: 20px 0;
+            }
+            footer {
+                text-align: center;
+                padding: 10px 0;
+                background: #007BFF;
+                color: white;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+            a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            .highlight {
+                color: #FF5733;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+    <header>
+        <h1>Proyecto de Fin de Curso - ASIR</h1>
+        <h2 class="highlight">Aplicación Web Desplegada con Helm - mi-app-albert</h2>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>Bienvenido a mi proyecto</h2>
+            <p>En este proyecto de fin de curso para el ciclo formativo de <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>, se presenta una introducción a <strong>Kubernetes</strong>, una plataforma de orquestación de contenedores que facilita la gestión y el despliegue de aplicaciones en entornos distribuidos.</p>
+            
+            <h3>¿Qué es Kubernetes?</h3>
+            <p>Kubernetes es un sistema de gestión de contenedores que permite automatizar el despliegue, escalado y la operación de aplicaciones en contenedores. Proporciona herramientas para gestionar clústeres de contenedores, asegurando que las aplicaciones estén disponibles y escalables según la demanda.</p>
+
+            <h3>Ventajas de usar Kubernetes</h3>
+            <ul>
+                <li><strong>Escalabilidad:</strong> Permite escalar aplicaciones de manera eficiente según la demanda.</li>
+                <li><strong>Alta disponibilidad:</strong> Garantiza que las aplicaciones estén siempre disponibles.</li>
+                <li><strong>Despliegue simplificado:</strong> Facilita el proceso de despliegue y actualización de aplicaciones.</li>
+                <li><strong>Gestión de recursos:</strong> Optimiza el uso de recursos del sistema.</li>
+            </ul>
+
+            <h3>Demostración</h3>
+            <p>En esta página, podrás ver una demostración básica de una aplicación web desplegada en Kubernetes, que muestra cómo se puede gestionar una aplicación en un clúster de Kubernetes.</p>
+
+            <h3>Explora más sobre Kubernetes</h3>
+            <p>Puedes visitar la <a href="https://kubernetes.io/" target="_blank">documentación oficial de Kubernetes</a> para más información y tutoriales.</p>
+            
+            <!-- Título destacado con explicación -->
+            <h3 class="highlight">Acerca de esta aplicación</h3>
+            <p>Esta es la aplicación web llamada <strong>mi-app-albert</strong>, creada por <strong>Alberto</strong> como parte de un proyecto de fin de curso para el ciclo formativo de <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>.</p>
+            <p>La aplicación está subida a GitHub y se encuentra disponible como un <strong>chart de Helm</strong>, lo que facilita su despliegue en cualquier clúster de Kubernetes. El código fuente y el chart de Helm están disponibles en el siguiente enlace: <a href="https://github.com/btovc/helm-app-albert" target="_blank">Repositorio en GitHub</a>.</p>
+            <p>Esta aplicación se puede desplegar fácilmente en un clúster de Kubernetes usando Helm. Si deseas aprender a desplegarla en tu propio clúster, consulta la documentación de Kubernetes y Helm.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Proyecto ASIR - Todos los derechos reservados.</p>
+    </footer>
+
+    </body>
+    </html>
