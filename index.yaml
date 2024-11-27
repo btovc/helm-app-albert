@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   mi-app-albert:
   - apiVersion: v2
-    appVersion: 1.0.1
+    appVersion: 1.0.2
     created: "2024-11-27T16:42:56.068877188+01:00"
     description: Un chart para la aplicación Nginx con ConfigMap
     digest: 34b88b33cf38a40ab474457b7602bdc962643f529c5b91cf465363ec3efadc56
