@@ -3,12 +3,12 @@ entries:
   mi-app-albert:
   - apiVersion: v2
     appVersion: 1.0.1
-    created: "2024-11-27T22:34:55.941591617+01:00"
+    created: "2024-11-27T22:59:29.227554556+01:00"
     description: Un chart para la aplicación Nginx con ConfigMap
-    digest: 2e351c1a97d2d3100d9cb74c6226509fc404e05e643fe8eaf97e184bc5b66c63
+    digest: 7eba34e052b76152359b90b785ffb320f5fc1c546077fffa4349775940287285
     name: mi-app-albert
     type: application
     urls:
-    - https://btovc.github.io/helm-app-albert/mi-app-albert-1.0.3.tgz
-    version: 1.0.3
-generated: "2024-11-27T22:34:55.941281673+01:00"
+    - https://btovc.github.io/helm-app-albert/mi-app-albert-1.0.4.tgz
+    version: 1.0.4
+generated: "2024-11-27T22:59:29.225835207+01:00"
